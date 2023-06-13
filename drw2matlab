@@ -1,0 +1,8 @@
+#!/usr/bin/ruby -w
+puts 'A = ['
+while (s = gets)
+	o = s[/\|(.+)\|/,1]
+	puts o + ';' unless o.nil?
+end
+puts ']'
+
